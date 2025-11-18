@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="text-center mb-4">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=400&fit=crop" class="img-fluid" alt="Agencia de Marketing">
+</div>
+<div class="jumbotron">
+    <h1 class="display-4">Bienvenido a la Agencia de Marketing</h1>
+    <p class="lead">Gestiona clientes, empleados, proyectos, campañas y facturas de manera eficiente.</p>
+    <hr class="my-4">
+    <p>Selecciona una opción del menú para comenzar.</p>
+</div>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Clientes" class="card-img-top" alt="Clientes">
+                <div class="card-body">
+                    <h5 class="card-title">Clientes</h5>
+                    <p class="card-text">Gestiona la información de tus clientes, incluyendo datos de contacto, empresa y estado.</p>
+                    <a href="{{ url_for('clientes') }}" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Empleados" class="card-img-top" alt="Empleados">
+                <div class="card-body">
+                    <h5 class="card-title">Empleados</h5>
+                    <p class="card-text">Administra el personal de la agencia, con detalles de puesto, salario y área de trabajo.</p>
+                    <a href="{{ url_for('empleados') }}" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Proyectos" class="card-img-top" alt="Proyectos">
+                <div class="card-body">
+                    <h5 class="card-title">Proyectos</h5>
+                    <p class="card-text">Controla los proyectos en curso, asignados a clientes y empleados específicos.</p>
+                    <a href="{{ url_for('proyectos') }}" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Campanas" class="card-img-top" alt="Campañas">
+                <div class="card-body">
+                    <h5 class="card-title">Campañas</h5>
+                    <p class="card-text">Crea y gestiona campañas de marketing con objetivos claros y fechas definidas.</p>
+                    <a href="{{ url_for('campanas') }}" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="https://via.placeholder.com/300x200?text=Facturas" class="card-img-top" alt="Facturas">
+                <div class="card-body">
+                    <h5 class="card-title">Facturas</h5>
+                    <p class="card-text">Registra y administra las facturas generadas por proyectos y clientes.</p>
+                    <a href="{{ url_for('facturas') }}" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
